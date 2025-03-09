@@ -1,1 +1,26 @@
-<p>subscription-options works!</p>
+<section class="container mt-4">
+    <h2 class="text-center">Choose Your Subscription</h2>
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h3>Standard Box</h3>
+          <p>Basic selection of books</p>
+          <button class="btn btn-primary w-100" (click)="selectSubscription('standard')">Select</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h3>Medium Box</h3>
+          <p>Curated selection of books</p>
+          <button class="btn btn-primary w-100" (click)="selectSubscription('medium')">Select</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h3>Premium Box</h3>
+          <p>Exclusive selection of books</p>
+          <button class="btn btn-primary w-100" (click)="selectSubscription('premium')">Select</button>
+        </div>
+      </div>
+    </div>
+  </section>

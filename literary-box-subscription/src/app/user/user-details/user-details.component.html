@@ -1,1 +1,15 @@
-<p>user-details works!</p>
+<section class="container mt-4">
+    <h2 class="text-center">Enter Your Details</h2>
+    <form (ngSubmit)="onNext()">
+      <label class="form-label">First Name:</label>
+      <input type="text" class="form-control mb-2" required>
+  
+      <label class="form-label">Last Name:</label>
+      <input type="text" class="form-control mb-2" required>
+  
+      <label class="form-label">Email:</label>
+      <input type="email" class="form-control mb-2" required>
+  
+      <button type="submit" class="btn btn-success w-100">Next Step</button>
+    </form>
+  </section>

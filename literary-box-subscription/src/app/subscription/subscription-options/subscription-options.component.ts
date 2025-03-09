@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-subscription-options',
-  imports: [],
   templateUrl: './subscription-options.component.html',
-  styleUrl: './subscription-options.component.css'
+  styleUrls: ['./subscription-options.component.css']
 })
 export class SubscriptionOptionsComponent {
+  @Output() nextStep = new EventEmitter<void>();
 
+  selectSubscription(option: string) {
+    console.log('Selected:', option);
+    this.nextStep.emit();
+  }
 }
